@@ -71,3 +71,67 @@ header {
     font-weight: 500;
     
 }
+
+.logos {
+    height: 20vh;
+    background-color: #f3ece3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20%;
+}
+.logos img {
+    width: 170px;
+}
+
+.banner {
+    position: relative;
+    height: 60vh;
+    background-image: url(img/banner.jpg);
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: -100px -50px;
+    padding: 50px 20% 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.banner > img {
+    height: 90%;
+    position:absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.banner-text {
+    text-align: center;
+    color: white;
+    width: 45%;
+}
+
+.banner-text h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.banner-text h3 {
+    color: #f3b329;
+    font-size: 15px;
+    font-weight: 500;
+}
+.banner-text p {
+    font-size: 14px;
+    color: #868586;
+    margin: 15px 0;
+}
+.banner-text img {
+    width: 100px;
+    height: auto;
+}
+
+.banner-text img:not(:last-child){
+    margin-right: 30px;
+}
