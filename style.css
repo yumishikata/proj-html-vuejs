@@ -148,21 +148,21 @@ header {
     margin-right: 30px;
 }
 
-.critics-two-columns {
+.two-columns {
     padding: 70px 15%;
 }
-.critics-header {
+.two-col-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.critics-header h1 {
+.two-col-header h1 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-.critics-header p {
+.two-col-header p {
     font-size: 13px;
     color: #3da698;
     font-weight: 500;
@@ -328,4 +328,36 @@ header {
 }
 .three-col-right {
     background-image: url(img/box-3.jpg)
+}
+
+.articles {
+    background-color: #f3ece3;
+}
+.articles-left {
+    width: 60%;
+    background-color: white;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.articles img {
+    width: 100%;
+    height: auto;
+}
+.articles-right {
+    width: 35%;
+    padding: 35px;
+    background-color: white;
+}
+
+.articles-right div:first-child {
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60vh; 
+    background-image: url(img/footer-3.jpg);
+    background-size: 100%;
 }
