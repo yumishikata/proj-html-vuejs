@@ -7,10 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Kristi&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Author</title>
 </head>
 <body>
+    <div class="fixed">
+        <a href="#">
+            <i class="fas fa-folder"></i>
+            <p>Demos</p>
+        </a>
+        <a href="#">
+            <span class="trentanove"><span class="dollaro">$</span>39</span>
+            <p>On Sale</p>
+        </a>
+    </div>
     <section class="jumbotron">
         <header>
             
@@ -18,10 +29,23 @@
         <div class="overlay">
 
         </div>
+        <div class="book-absolute">
+            <div>
+                <img src="img/book-widget.png" alt="">
+                <div>
+                    <h2 class="font-title">Latest Book Release</h2>
+                    <p>D. VAUGHN AUTOBIOGRAPHY</p>
+                    <p>Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibendum volutpat. Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <a href="#"> <i class="fab fa-amazon"></i> Buy On Amazon</a><a href="#"> <i class="fab fa-apple"></i> Buy On AppStore</a>
+        </div>
         <div class="jumbo-text">
             <h1 class="handwriting-text">Damon Vaughn</h1>
             <h1 class="font-title"> Best-selling author and the most influential public intellectual in the western world right now.</h1>
             <p>- The New York Times</p>
+            <div><i class="fas fa-arrow-left"></i></div>
+            <div><i class="fas fa-arrow-right"></i></div>
         </div>
         
     </section>
@@ -66,20 +90,20 @@
                         <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut liber. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec rutrum congue leo eget malesuada.</p>
                         <div>
                         <img src="img/nytimes-logo-white-xsmall.png" alt="">
-                        <p class="inline">Justine Kilpatrick,</p>
-                        <p class="inline">The New York Times</p>
+                        <p class="inline didascalia">Justine Kilpatrick,</p>
+                        <p class="inline green didascalia">The New York Times</p>
                         </div>
                     </div>
                 </div>
                 <div class="critics-right">
                     <div>
-                        <h3>A True Masterpiece, Bravo!</h3>
+                        <h3 class="font-title">A True Masterpiece, Bravo!</h3>
                         <p>Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feug at.</p>
                     </div>
                     <img src="img/theguardian-xsmall.png" alt="">
                     <p class="inline"> Gerald Hendley, The Guardian</p>
                     <div>
-                        <h3>A Unique View On The World</h3>
+                        <h3 class="font-title">A Unique View On The World</h3>
                         <p>Donec sollicitud molestie malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet.</p>
                     </div>
                     <img src="img/globe-xsmall.png" alt="">

@@ -19,6 +19,47 @@ body {
     font-family: 'DM Serif Display', serif;
     font-weight: 300;
 }
+.green {
+    color: #3da698;
+}
+
+.fixed {
+    position: fixed; 
+    right: 1%; 
+    top: 20%;
+    z-index: 99999;
+}
+.fixed > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fixed i {
+    font-size: 25px;
+}
+.trentanove {
+    font-size: 20px;
+    color: #3da698;
+    font-weight: 700;
+}
+.dollaro {
+    position: relative;
+    bottom: 30%;
+    right: 3%;
+    font-size: 13px;
+
+}
 header {
     height: 10vh;
     
@@ -41,7 +82,53 @@ header {
     bottom: 0;
     
 }
-
+.book-absolute {
+    width: 35%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 40px 45px;
+    font-size: 13px; 
+}
+.book-absolute p:first-of-type {
+    color: #f3b329;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.book-absolute p:last-of-type {
+    font-size: 11px;
+    line-height: 20px;
+    color: #868586;
+}
+.book-absolute img {
+    width: 50%;
+}
+.book-absolute > div {
+    display: flex; 
+    justify-content: space-between;
+}
+.book-absolute a {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgba(120, 207, 196, 0.1);
+    text-decoration: none; 
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+}
+.book-absolute a:first-of-type {
+    border: 1px solid rgba(120, 207, 196, 0.5);
+    border-radius: 5px 0 0 5px;
+}
+.book-absolute a:last-of-type {
+    border: 1px solid rgba(120, 207, 196, 0.5);
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+}
 .jumbo-text {
     position: absolute;
     top: 30%;
@@ -58,6 +145,24 @@ header {
     color: #868586;
     font-style: italic;
     font-size: 17px;
+    margin: 20px 0;
+}
+
+.jumbo-text div {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 40px;
+    height: 40px;
+    color: white; 
+    text-align: center;
+    line-height: 40px;
+}
+
+.jumbo-text div:first-of-type{
+    border-radius: 5px 0 0 5px;
+}
+.jumbo-text div:last-of-type {
+    border-radius: 0 5px 5px 0;
 }
 
 .more-about {
@@ -84,7 +189,7 @@ header {
 
 .logos {
     height: 20vh;
-    background-color: #f3ece3;
+    background-color: #fef7e8;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +272,15 @@ header {
     color: #3da698;
     font-weight: 500;
 }
-
+.two-columns a {
+    background-color: #f3b329;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
 .columns {
     display: flex;
     justify-content: space-between;
@@ -197,15 +310,29 @@ header {
     margin-right: 20px;
     vertical-align: middle;
 }
-
+.critics-left h2 {
+    font-size: 30px;
+    
+}
+.critics-left hr {
+    opacity: 0.2;
+}
 .critics-right {
     width: 35%;
 }
-
+.critics-left p:first-of-type:not(.didascalia) {
+    font-size: 16px;
+}
+.critics-left p:not(:first-of-type){
+    font-size: 14px;
+}
+.didascalia  {
+    font-weight: bold;
+}
 .critics-right div {
     text-align: center;
     padding: 40px;
-    background-color: #f3ece3;
+    background-color: #fef7e8;
     margin-bottom: 20px;
 }
 
@@ -226,7 +353,7 @@ header {
 .events {
     text-align: center;
     padding: 50px 10%;
-    background-color: #f3ece3;
+    background-color: #fef7e8;
 }
 
 .events-column {
@@ -331,7 +458,7 @@ header {
 }
 
 .articles {
-    background-color: #f3ece3;
+    background-color: #fef7e8;
 }
 .articles-left {
     width: 60%;
