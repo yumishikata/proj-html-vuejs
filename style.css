@@ -117,22 +117,24 @@ header {
 }
 
 .banner-text {
-    text-align: center;
-    color: white;
     width: 45%;
 }
+.banner-prop {
+    text-align: center;
+    color: white;
+}
 
-.banner-text h2 {
+.banner-prop h2 {
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
 }
-.banner-text h3 {
+.banner-prop h3 {
     color: #f3b329;
     font-size: 15px;
     font-weight: 500;
 }
-.banner-text p {
+.banner-prop p {
     font-size: 14px;
     color: #868586;
     margin: 15px 0;
@@ -166,7 +168,7 @@ header {
     font-weight: 500;
 }
 
-.critics-two-columns .columns {
+.columns {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -190,6 +192,12 @@ header {
     justify-content: space-between;
 }
 
+.critics-left img {
+    width: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
 .critics-right {
     width: 35%;
 }
@@ -203,4 +211,121 @@ header {
 
 .critics-right div:not(:first-child) {
     margin-top: 30px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.critics-right img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.events {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #f3ece3;
+}
+
+.events-column {
+    background-color: white;
+}
+.events-column div {
+    
+    text-align: center;
+    padding: 10%;
+    width: 350px;
+}
+.events-column img {
+    width: 350px;
+    margin-bottom: 0;
+}
+
+.banner-second {
+    position: relative;
+    height: 60vh;
+    background-image: url(img/banner-2.jpg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.banner-second .banner-prop {
+    padding: 100px 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.banner-prop .input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-prop .email {
+    padding: 10px 85px 10px 10px;
+    border-radius: 5px;
+}
+
+.banner-prop .subscribe {
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #3da698;
+    color: white;
+}
+
+.about-author {
+    padding: 70px 15%; 
+    height: 90vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+}
+.about-author .overlay {
+    padding: 80% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.three-columns hr {
+    width: 40px;    
+    opacity: 0.5;                      
+}
+.three-columns h2 {
+    color: white;
+    font-weight: 400;
+}
+.three-columns p {
+    color: #f3b329;
+}
+.about-author .three-columns > div {
+    height: 350px;
+    width:  300px;
+    overflow: hidden; 
+    border-bottom-right-radius: 50px;
+    position: relative;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+.three-col-left {
+    background-image: url(img/box-1.jpg)
+}
+.three-col-middle {
+    background-image: url(img/box-4.jpg)
+}
+.three-col-right {
+    background-image: url(img/box-3.jpg)
 }
