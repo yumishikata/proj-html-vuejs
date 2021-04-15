@@ -22,14 +22,16 @@ body {
 .green {
     color: #3da698;
 }
-
-.fixed {
+.yellow {
+    color: #f3b329;
+}
+.fixed-header {
     position: fixed; 
     right: 1%; 
     top: 20%;
     z-index: 99999;
 }
-.fixed > a {
+.fixed-header > a {
     display: block;
     text-decoration: none;
     color: black;
@@ -45,7 +47,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.fixed i {
+.fixed-header i {
     font-size: 25px;
 }
 .trentanove {
@@ -81,6 +83,11 @@ header {
     right: 0;
     bottom: 0;
     
+}
+.logo-jumbo {
+    position: absolute;
+    left: 5%;
+    top: 0;
 }
 .book-absolute {
     width: 35%;
@@ -231,16 +238,16 @@ header {
 
 .banner-prop h2 {
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 .banner-prop h3 {
     color: #f3b329;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 }
 .banner-prop p {
-    font-size: 14px;
+    font-size: 13px;
     color: #868586;
     margin: 15px 0;
 }
@@ -272,7 +279,7 @@ header {
     color: #3da698;
     font-weight: 500;
 }
-.two-columns a {
+.two-columns .yellow-button {
     background-color: #f3b329;
     color: white;
     font-size: 10px;
@@ -350,17 +357,37 @@ header {
     margin-right: 20px;
 }
 
+.critics-right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.critics-right > div p {
+    font-size: 12px;
+    color: #806d80;
+    line-height: 22px;
+    font-weight: 500;
+}
+.critics-right .inline {
+    margin-right: 5px;
+}
 .events {
     text-align: center;
     padding: 50px 10%;
     background-color: #fef7e8;
 }
-
+.events h1 {
+    font-size: 30px;
+}
+.events > p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+}
 .events-column {
     background-color: white;
 }
 .events-column div {
-    
     text-align: center;
     padding: 10%;
     width: 350px;
@@ -369,7 +396,22 @@ header {
     width: 350px;
     margin-bottom: 0;
 }
+.events-column h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
 
+}
+.events-column hr {
+    opacity: 0.2;
+}
+
+.events-column p {
+    font-size: 12px;
+    color: #806d80;
+    line-height: 22px;
+    font-weight: 500;
+}
 .banner-second {
     position: relative;
     height: 60vh;
@@ -380,7 +422,7 @@ header {
 }
 
 .banner-second .banner-prop {
-    padding: 100px 35%;
+    padding: 80px 35%;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -413,6 +455,14 @@ header {
     align-items: center; 
     text-align: center;
 }
+.about-author h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.about-author p {
+    font-size: 13px;
+    font-weight: 500;
+}
 .about-author .overlay {
     padding: 80% 10% 10% 10%;
     display: flex;
@@ -436,6 +486,7 @@ header {
 }
 .three-columns p {
     color: #f3b329;
+    font-size: 12px;
 }
 .about-author .three-columns > div {
     height: 350px;
@@ -469,14 +520,41 @@ header {
     justify-content: space-between;
     
 }
+.articles-left h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.articles-left p:first-of-type , .articles-right p {
+    font-size: 10px;
+    color: #806d80;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.articles-left a , .articles-right a{
+    color: black;
+    text-decoration: none;
+}
+.articles-left p:last-of-type {
+    font-size: 12px;
+    color: #806d80;
+    font-weight: 400;
+}
 .articles img {
     width: 100%;
-    height: auto;
+    height: 90%;
 }
 .articles-right {
     width: 35%;
     padding: 35px;
     background-color: white;
+}
+.articles-right h2 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .articles-right div:first-child {
@@ -484,7 +562,23 @@ header {
 }
 
 footer {
+    position: relative;
     height: 60vh; 
     background-image: url(img/footer-3.jpg);
     background-size: 100%;
+}
+
+.absolute-footer {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 40px;
+    height: 30px;
+    background-color: rgba(134, 133, 134, 0.6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
 }
