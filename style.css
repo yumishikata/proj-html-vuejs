@@ -1,35 +1,87 @@
+/*  REGOLE GENERALI */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
+/* FONT */
 .handwriting-text {
     font-family: 'Kristi', cursive;
     color: #f3b329;
     font-weight: 100;
     font-size: 80px;
 }
+
 .font-title {
     font-family: 'DM Serif Display', serif;
     font-weight: 300;
 }
+
 .green {
     color: #3da698;
 }
+
 .yellow {
     color: #f3b329;
 }
+
+.light-grey {
+    color:#868586;
+}
+
+.grey {
+    color: #4f4f4f;
+}
+
+.bold  {
+    font-weight: bold;
+}
+
+/* BOTTONI */
+
 .button-green {
     background-color: #3da698;
     color: white;
     border-radius: 5px;
 }
+
+.yellow-button {
+    background-color: #f3b329;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+/* CLASSI GENERICHE */
+
+.pos-relative {
+    position: relative;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.8);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 81%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+/* FIXED */
+
 .fixed-header {
     position: fixed; 
     right: 1%; 
@@ -61,12 +113,29 @@ body {
     font-weight: 700;
 }
 .dollaro {
-    position: relative;
     bottom: 30%;
     right: 3%;
     font-size: 13px;
-
 }
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+    width: 40px;
+    height: 30px;
+    background-color: rgba(134, 133, 134, 0.6);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+/* ------------- */
+
+/* header */
 
 header {
     height: 10vh;
@@ -88,6 +157,7 @@ header ul li a {
     color: white; 
 }
 
+/* header-vue */
 .menu-active {
     border-top: 3px solid #f3b329;
 }
@@ -95,8 +165,9 @@ header ul li a {
     color: #f3b329;
     font-size: 12px;
 }
+
+/* jumbotron  */
 .jumbotron {
-    position: relative;
     height: 90vh;
     width: 100%;
     background-image: url(img/hero-07-2x.jpg);
@@ -104,16 +175,6 @@ header ul li a {
     background-size: cover;
 }
 
-.overlay {
-    background: rgba(0,0,0,0.8);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 81%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    
-}
 .overlay-jumbo {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.80015756302521) 81%);
@@ -124,6 +185,40 @@ header ul li a {
     left: 5%;
     top: 0;
 }
+
+.jumbo-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+}
+.jumbo-text .font-title {
+    color: white;
+    font-size: 35px;
+}
+.jumbo-text p {
+    color: #868586;
+    font-style: italic;
+    font-size: 17px;
+    margin: 20px 0;
+}
+.jumbo-text div {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 40px;
+    height: 40px;
+    color: white; 
+    text-align: center;
+    line-height: 40px;
+}
+.jumbo-text div:first-of-type{
+    border-radius: 5px 0 0 5px;
+}
+.jumbo-text div:last-of-type {
+    border-radius: 0 5px 5px 0;
+}
+
+/* book widget nel jumbotron */
 .book-absolute {
     width: 35%;
     background-color: white;
@@ -170,51 +265,17 @@ header ul li a {
     border-left: 0;
     border-radius: 0 5px 5px 0;
 }
-.jumbo-text {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 40%;
-}
 
-.jumbo-text .font-title {
-    color: white;
-    font-size: 35px;
-}
+/* MAIN */
 
-.jumbo-text p {
-    color: #868586;
-    font-style: italic;
-    font-size: 17px;
-    margin: 20px 0;
-}
-
-.jumbo-text div {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6); 
-    width: 40px;
-    height: 40px;
-    color: white; 
-    text-align: center;
-    line-height: 40px;
-}
-
-.jumbo-text div:first-of-type{
-    border-radius: 5px 0 0 5px;
-}
-.jumbo-text div:last-of-type {
-    border-radius: 0 5px 5px 0;
-}
-
+/* Sezione more about  */
 .more-about {
     text-align: center;
     padding: 100px 15%;
 }
-
 .more-about p {
     font-size: 21px;
 }
-
 .more-about a {
     display: inline-block;
     padding: 10px 15px;
@@ -225,6 +286,7 @@ header ul li a {
     
 }
 
+/* sezione loghi */
 .logos {
     height: 20vh;
     background-color: #fef7e8;
@@ -237,8 +299,8 @@ header ul li a {
     width: 170px;
 }
 
+/* sezione primo banner */
 .banner {
-    position: relative;
     height: 60vh;
     background-image: url(img/banner.jpg);
     background-color: black;
@@ -251,22 +313,21 @@ header ul li a {
     justify-content: flex-end;
 
 }
-
 .banner > img {
     height: 90%;
     position:absolute;
     bottom: 0;
     left: 20%;
 }
-
 .banner-text {
     width: 45%;
 }
+
+/* regole generali banner */
 .banner-prop {
     text-align: center;
     color: white;
 }
-
 .banner-prop h2 {
     color: white;
     font-size: 32px;
@@ -282,49 +343,42 @@ header ul li a {
     color: #868586;
     margin: 15px 0;
 }
+/* fine regole generali banner */
+ /* gestione loghi del banner */
 .banner-text img {
     width: 100px;
     height: auto;
 }
-
 .banner-text img:not(:last-child){
     margin-right: 30px;
 }
 
+/* sezione con due colonne */
 .two-columns {
     padding: 70px 15%;
 }
+
 .two-col-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .two-col-header h1 {
     font-size: 30px;
     margin-bottom: 10px;
 }
-
 .two-col-header p {
     font-size: 13px;
-    color: #3da698;
     font-weight: 500;
 }
-.two-columns .yellow-button {
-    background-color: #f3b329;
-    color: white;
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 40px;
-    border-radius: 5px;
-}
+
 .columns {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 
 }
+/* gestione della colonna sinistra */
 .critics-left {
     position: relative;
     background-image: url(img/testimonial2-2x.jpg);
@@ -335,14 +389,12 @@ header ul li a {
     width: 60%; 
     overflow: hidden;
 }
-
 .critics-left .overlay {
     padding: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .critics-left img {
     width: 20px;
     margin-right: 20px;
@@ -355,17 +407,15 @@ header ul li a {
 .critics-left hr {
     opacity: 0.2;
 }
-.critics-right {
-    width: 35%;
-}
 .critics-left p:first-of-type:not(.didascalia) {
     font-size: 16px;
 }
 .critics-left p:not(:first-of-type){
     font-size: 14px;
 }
-.didascalia  {
-    font-weight: bold;
+/* gestione della colonna destra */
+.critics-right {
+    width: 35%;
 }
 .critics-right div {
     text-align: center;
@@ -373,26 +423,18 @@ header ul li a {
     background-color: #fef7e8;
     margin-bottom: 20px;
 }
-
 .critics-right div:not(:first-child) {
     margin-top: 30px;
 }
-
-.inline {
-    display: inline-block;
-}
-
 .critics-right img {
     width: 20px;
     vertical-align: middle;
     margin-right: 20px;
 }
-
 .critics-right h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
 .critics-right > div p {
     font-size: 12px;
     color: #4f4f4f;
@@ -402,6 +444,8 @@ header ul li a {
 .critics-right .inline {
     margin-right: 5px;
 }
+
+/* sezione eventi */
 .events {
     text-align: center;
     padding: 50px 10%;
@@ -415,6 +459,7 @@ header ul li a {
     font-weight: 500;
     margin-top: 5px;
 }
+/* colonne eventi */
 .events-column {
     background-color: white;
 }
@@ -430,20 +475,19 @@ header ul li a {
 .events-column h2{
     font-size: 18px;
     font-weight: 400;
-    
-
 }
 .events-column hr {
     opacity: 0.2;
     margin: 15px 0;
 }
-
 .events-column p {
     font-size: 12px;
     color: #4f4f4f;
     line-height: 22px;
     font-weight: 500;
 }
+
+/* secondo banner */
 .banner-second {
     position: relative;
     height: 60vh;
@@ -452,7 +496,6 @@ header ul li a {
     text-align: center;
     color: white;
 }
-
 .banner-second .banner-prop {
     padding: 80px 35%;
     display: flex;
@@ -460,19 +503,16 @@ header ul li a {
     align-items: center; 
     justify-content: space-between;
 }
-
 .banner-prop .input {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 .banner-prop .email {
     padding: 10px 85px 10px 10px;
     border-radius: 5px;
     border-width: 0;
 }
-
 .banner-prop .subscribe {
     padding: 10px 50px;
     border-width: 0;
@@ -651,20 +691,7 @@ footer ul li {
 .icone li {
     margin-right: 15px;
 }
-.absolute-footer {
-    position: fixed;
-    bottom: 0;
-    right: 5%;
-    width: 40px;
-    height: 30px;
-    background-color: rgba(134, 133, 134, 0.6);
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px 5px 0 0;
-}
+
 
 /* HOVER */ 
 .overlay-green {
@@ -673,11 +700,7 @@ footer ul li {
     background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(61,166,152,0.2) 78%);
 }
 
-.pos-relative {
-    position: relative;
-    
-}
-.events img, .yellow-button, .buy-button, #header-vue li a, .cards , .lista-link, .icone li {
+.yellow-button, .buy-button, #header-vue li a, .cards , .lista-link, .icone li , .events .pos-relative {
     transition: 0.3s;
 }
 .yellow-button:hover {
@@ -704,7 +727,6 @@ footer ul li {
 
 .events .pos-relative:hover .overlay-green{
     display: block;
-    
 }
 
 .lista-link:hover , .icone li:hover{
