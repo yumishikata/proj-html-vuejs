@@ -597,12 +597,62 @@ header ul li a {
 }
 
 footer {
+    padding: 90px 10% 20px 5%;
     position: relative;
     height: 60vh; 
     background-image: url(img/footer-3.jpg);
     background-size: 100%;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+footer img {
+    width: 150px;
+    height: 150px;
+}
+.orizzontale {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
+footer h3 {
+    color: white; 
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+footer div {
+    width: 25%;
+    color: lightgrey;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 12px;
+}
+footer ul li {
+    list-style: none;
+    line-height: 30px;
+}
+.lista-link {
+    color: white;
+}
+.lista-link::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f054";
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.icone {
+    display: flex;
+}
+.icone li {
+    margin-right: 15px;
+}
 .absolute-footer {
     position: fixed;
     bottom: 0;
@@ -617,3 +667,4 @@ footer {
     align-items: center;
     border-radius: 5px 5px 0 0;
 }
+

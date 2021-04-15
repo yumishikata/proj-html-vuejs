@@ -218,8 +218,27 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer id="footer-vue">
+        <div class="orizzontale">
+            <img src="img/author-logo-round-200x205.png" alt="">
+            <div v-for="colonna in liste">
+                <h3 class="font-title">{{colonna.title}}</h3>
+                <p v-if="colonna.type == 'descrizione'">
+                    {{colonna.paragraph}}
+                </p>
+                <ul v-else> 
+                    <li v-for="lista in colonna.list" :class="(colonna.type == 'link')? 'lista-link' : 'lista-contatti'">
+                        {{lista}}
+                    </li>
+                </ul>
+                <ul v-if="colonna.type == 'contatti'" class="icone">
+                    <li v-for="icona in colonna.icons">
+                        <i :class="icona"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p style="color: lightgrey; font-size: 10px">{{copyright}}</p>
     </footer>
     <div class="absolute-footer">
         <i class="fas fa-chevron-up"></i>
