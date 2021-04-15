@@ -26,7 +26,7 @@
         <div class="overlay-jumbo">
             <header id="header-vue">
                 <ul>
-                    <li v-for="(menu, index) in nav" :class="(menu == currentPage)? 'menu-active' : null" @click="page(index)">
+                    <li v-for="(menu, index) in nav" :class="(menu == currentPage)? 'menu-active' : null" @click="page(index)" >
                        <a href="#">{{menu}}</a> 
                     </li>
                     <li>
@@ -45,7 +45,7 @@
                     <p>Vestibulum tristique turpis in ipsum egestas lobortis. Duis maximus bibendum volutpat. Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
-            <a href="#"> <i class="fab fa-amazon"></i> Buy On Amazon</a><a href="#"> <i class="fab fa-apple"></i> Buy On AppStore</a>
+            <a href="#" class="buy-button"> <i class="fab fa-amazon"></i> Buy On Amazon</a><a href="#" class="buy-button"> <i class="fab fa-apple"></i> Buy On AppStore</a>
         </div>
         <div class="jumbo-text">
             <h1 class="handwriting-text">Damon Vaughn</h1>
@@ -238,7 +238,7 @@
                 </ul>
             </div>
         </div>
-        <p style="color: lightgrey; font-size: 10px">{{copyright}}</p>
+        <p style="color: #cccccc; font-size: 10px">{{copyright}}</p>
     </footer>
     <div class="absolute-footer">
         <i class="fas fa-chevron-up"></i>
