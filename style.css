@@ -25,6 +25,11 @@ body {
 .yellow {
     color: #f3b329;
 }
+.button-green {
+    background-color: #3da698;
+    color: white;
+    border-radius: 5px;
+}
 .fixed-header {
     position: fixed; 
     right: 1%; 
@@ -62,18 +67,16 @@ body {
     font-size: 13px;
 
 }
+
 header {
     height: 10vh;
     padding-right: 5%;
-    
 }
 header ul {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    
 }
-
 header ul li {
     margin-left: 30px;
     font-weight: 700;
@@ -100,15 +103,7 @@ header ul li a {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.overlay-jumbo {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.80015756302521) 81%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
+
 .overlay {
     background: rgba(0,0,0,0.8);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 81%);
@@ -119,6 +114,11 @@ header ul li a {
     bottom: 0;
     
 }
+.overlay-jumbo {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.80015756302521) 81%);
+}
+
 .logo-jumbo {
     position: absolute;
     left: 5%;
@@ -218,10 +218,7 @@ header ul li a {
 .more-about a {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #3da698;
     text-decoration: none;
-    border-radius: 5px;
-    color: white;
     margin-top: 30px;
     font-size: 10px;
     font-weight: 500;
@@ -421,7 +418,7 @@ header ul li a {
 .events-column {
     background-color: white;
 }
-.events-column div {
+.events-column div:not(.pos-relative) {
     text-align: center;
     padding: 10%;
     width: 350px;
@@ -468,17 +465,18 @@ header ul li a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    
 }
 .banner-prop .email {
     padding: 10px 85px 10px 10px;
     border-radius: 5px;
+    border-width: 0;
 }
 
 .banner-prop .subscribe {
     padding: 10px 50px;
-    border-radius: 5px;
-    background-color: #3da698;
-    color: white;
+    border-width: 0;
+
 }
 
 .about-author {
@@ -669,7 +667,19 @@ footer ul li {
 }
 
 /* HOVER */ 
+.overlay-green {
+    display: none;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.3) 0%, rgba(61,166,152,0.2) 78%);
+}
 
+.pos-relative {
+    position: relative;
+    
+}
+.events img, .yellow-button, .buy-button, #header-vue li a, .cards , .lista-link, .icone li {
+    transition: 0.3s;
+}
 .yellow-button:hover {
     background-color: #e1aa40;
 }
@@ -685,4 +695,24 @@ footer ul li {
 
 #header-vue li a:hover  {
     color: #f3b329;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px 2px lightgrey;
+}
+
+.events .pos-relative:hover .overlay-green{
+    display: block;
+    
+}
+
+.lista-link:hover , .icone li:hover{
+    color: #f3b329;
+    cursor: pointer;
+}
+
+.button-green:hover {
+    background-color: #286e65;
+    cursor: pointer;
 }

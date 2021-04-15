@@ -22,11 +22,12 @@
             <p>On Sale</p>
         </a>
     </div>
+
     <section class="jumbotron">
-        <div class="overlay-jumbo">
+        <div class="overlay overlay-jumbo">
             <header id="header-vue">
                 <ul>
-                    <li v-for="(menu, index) in nav" :class="(menu == currentPage)? 'menu-active' : null" @click="page(index)" >
+                    <li v-for="(menu, index) in nav" :class="(menu == currentPage)? 'menu-active' : null" @click="page(index)">
                        <a href="#">{{menu}}</a> 
                     </li>
                     <li>
@@ -60,7 +61,7 @@
         <section class="more-about">
             <h1 class="handwriting-text">More About Damon Vaughn</h1>
             <p>Damon Vaughn is a professor of psychology at the University of Toronto, a clinical psychologist and the author of the multi-million copy bestseller "The story of my life."</p>
-            <a href="#">Meet The Author</a>
+            <a href="#" class="button-green">Meet The Author</a>
         </section>
         <section class="logos">
             <img src="img/ebay-logotan-2x-200x66.png" alt="">
@@ -88,7 +89,7 @@
                 <a href="" class="yellow-button">Read All Testimonials</a>
             </div>
             <div class="columns">
-                <div class="critics-left">
+                <div class="cards critics-left">
                     <div class="overlay" >
                         <h2 class="font-title">Best Author Of His Generation</h2>
                         <hr>
@@ -123,7 +124,10 @@
             <p class="yellow">MEET THE AUTHOR IN PERSON</p>
             <div class="columns">
                 <div class="events-column">
-                    <img src="img/event-05-400x240.jpg" alt="">
+                    <div class="pos-relative">
+                        <img src="img/event-05-400x240.jpg" alt="">
+                        <div class="overlay overlay-green"></div>
+                    </div>
                     <div>
                         <h2>Chicago Book Signin</h2>
                         <hr>
@@ -131,7 +135,10 @@
                     </div>
                 </div>
                 <div class="events-column">
-                    <img src="img/event-04-400x240.jpg" alt="">
+                    <div class="pos-relative">
+                        <img src="img/event-04-400x240.jpg" alt="">
+                        <div class="overlay-green"></div>
+                    </div>
                     <div>
                         <h2>Meet & Greet With Amanda</h2>
                         <hr>
@@ -139,7 +146,10 @@
                     </div>
                 </div>
                 <div class="events-column">
-                    <img src="img/event-07-400x240.jpg" alt="">
+                    <div class="pos-relative">
+                        <img src="img/event-07-400x240.jpg" alt="">
+                        <div class="overlay overlay-green"></div>
+                    </div>
                     <div>
                         <h2>Open Book: Dialogues</h2>
                         <hr>
@@ -154,7 +164,7 @@
                 <h3>BE NOTIFIED ABOUT BOOK SIGNING TOUR DATES</h3>
                 <span class="input">
                     <input class="email" type="email" placeholder="Insert your email ...*">
-                    <input class="subscribe" type="submit" value="Subscribe">
+                    <input class="subscribe button-green" type="submit" value="Subscribe">
                 </span>
                 <p>Donec fringilla nunc eu turpis dignissim, at euismod sapien tincidunt.</p>
             </div>
@@ -165,21 +175,21 @@
                 <p class="green">FIND OUT MORE ABOUT THE AUTHOR HIMSELF</p>
             </div>
             <div class="three-columns">
-                <div class="three-col-left">
+                <div class="cards three-col-left">
                     <div class="overlay">
                         <h2>About Me</h2>
                         <hr>
                         <p>Vestibulum ante ipsum primis.</p>
                     </div>
                 </div>
-                <div class="three-col-middle">
+                <div class="cards three-col-middle">
                     <div class="overlay">
                         <h2>My Latest Book</h2>
                         <hr>
                         <p>Vestibulum ante ipsum primis.</p>
                     </div>
                 </div>
-                <div class="three-col-right">
+                <div class="cards three-col-right">
                     <div class="overlay">
                         <h2>Book Signing</h2>
                         <hr>
