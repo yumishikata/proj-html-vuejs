@@ -64,7 +64,33 @@ body {
 }
 header {
     height: 10vh;
+    padding-right: 5%;
     
+}
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    
+}
+
+header ul li {
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 11px;
+    padding-top: 30px;
+}
+header ul li a {
+    text-decoration: none;
+    color: white; 
+}
+
+.menu-active {
+    border-top: 3px solid #f3b329;
+}
+.menu-active a {
+    color: #f3b329;
+    font-size: 12px;
 }
 .jumbotron {
     position: relative;
@@ -73,6 +99,15 @@ header {
     background-image: url(img/hero-07-2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.overlay-jumbo {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.80015756302521) 81%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .overlay {
     background: rgba(0,0,0,0.8);

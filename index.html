@@ -23,10 +23,17 @@
         </a>
     </div>
     <section class="jumbotron">
-        <header>
-            
-        </header>
-        <div class="overlay">
+        <div class="overlay-jumbo">
+            <header id="header-vue">
+                <ul>
+                    <li v-for="(menu, index) in nav" :class="(menu == currentPage)? 'menu-active' : null" @click="page(index)">
+                       <a href="#">{{menu}}</a> 
+                    </li>
+                    <li>
+                       <a href="#"><i :class="icon"></i></a> 
+                    </li>
+                </ul>
+            </header>
         </div>
         <img src="img/author-logo-round-small.png" alt="" class="logo-jumbo">
         <div class="book-absolute">
@@ -217,6 +224,6 @@
     <div class="absolute-footer">
         <i class="fas fa-chevron-up"></i>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>
